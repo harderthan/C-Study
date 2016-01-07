@@ -1,3 +1,8 @@
+
+
+#ifndef __PERSON_H_
+#define __PERSON_H_
+
 #include <iostream>
 #include <cstring>
 
@@ -28,7 +33,7 @@ public:
 	}
 
 
-	void inputCoin(int _coin) 
+	virtual void inputCoin(int _coin) 
 	{
 		if (_coin <= 0)
 			cout << "올바른 값을 입력하세요." << endl;
@@ -65,3 +70,4 @@ public:
 	}
 };
 
+#endif
